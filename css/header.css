@@ -1,26 +1,23 @@
 header {
 	grid-area: header;
-	background-color: #d2232a;
 }
 
 .top-header {
-	display: grid;
-	grid-template-columns: 1fr 2fr 1fr;
 	background-color: #d2232a;
-	padding-top: 15px;
-	padding-bottom: 15px;
 }
 
-.top-header-middle {
-	grid-column: 2;
+.top-header .middle-container {
 	display: flex;
+	justify-content: space-evenly;
 	align-items: center;
-	justify-content: space-around;
-	padding-top: 15px;
-	padding-bottom: 15px;
+	padding-top: 1.9rem;
+	padding-bottom: 1.9rem;
+}
+.top-header .publicity {
+	margin-left: 4.5rem;
 }
 
-.top-header-middle a {
+.top-header .publicity a {
 	text-decoration: none;
 	color: #ffffff;
 	font-size: 1.5625rem;
@@ -31,55 +28,117 @@ header {
 	text-transform: uppercase;
 }
 
-.top-header-middle a:hover {
+.top-header .publicity a:hover {
 	text-decoration: underline;
 	background-color: rgba(0, 0, 0, 0.3);
 }
 
-.top-header-middle a:nth-child(1) {
+.top-header .icons-area {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1.5rem;
+}
+
+.top-header .icons-area .icons-media i {
+	font-size: 18px;
+	color: #000;
 	margin-right: 5px;
+}
+
+.top-header .icons-area .icons-media i:hover,
+.top-header .icons-area #adidas-logo:hover {
+	filter: invert(100%);
+	cursor: pointer;
 }
 
 .bottom-header {
 	background-color: #000;
 	border-bottom: 4px solid #535353;
-	display: grid;
-	grid-template-columns: 1fr 2fr 1fr;
+}
+
+.bottom-header nav {
+	position: relative;
 }
 
 .logo-menu {
 	position: absolute;
-	top: 1%;
-	left: 23%;
+	top: -93px;
+	left: -13%;
 }
 
 .logo-menu img {
 	height: 130px;
 }
 
-.bottom-header nav {
-	grid-column: 2;
+.bottom-header .middle-container {
 	display: flex;
+	justify-content: center;
 	align-items: center;
-	justify-content: space-around;
 }
 
 .bottom-header nav ul {
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	flex-direction: row;
 	text-transform: uppercase;
+	white-space: nowrap;
+	list-style-type: none;
 }
 
-.bottom-header nav ul li {
+.bottom-header nav ul > li {
 	padding: 10px;
 	border-left: 1px solid #252525;
 	border-right: 1px solid #252525;
 }
 
-.bottom-header a {
+.bottom-header nav ul li.dropdown {
+	position: relative;
+}
+
+.bottom-header nav ul a {
 	font-size: 1.0411457419rem;
 	font-weight: 600;
 	text-decoration: none;
 	color: #ffffff;
+}
+
+.bottom-header nav ul a:hover {
+	color: #d2232a;
+}
+
+.bottom-header nav ul ul.dropdown-content {
+	position: absolute;
+	display: none;
+	flex-direction: column;
+	background-color: #000;
+	list-style: none;
+	padding: 15px;
+	min-width: 10rem;
+}
+
+.bottom-header nav ul li.dropdown ul.dropdown-content > li {
+	border-left: none;
+	border-right: none;
+	border-bottom: 1px solid #535353;
+	padding: 0;
+}
+
+.bottom-header nav ul li.dropdown ul.dropdown-content > li a {
+	display: block;
+	font-weight: 400;
+	font-size: 1.2rem;
+	line-height: 1.6rem;
+	text-transform: capitalize;
+	width: 100%;
+	padding: 4px 24px 4px 24px;
+}
+
+.bottom-header nav ul li.dropdown ul.dropdown-content > li a:hover {
+	background-color: #d2232a;
+	color: #ffffff;
+}
+
+.bottom-header nav ul li.dropdown#futebol:hover ul.dropdown-content
+.bottom-header nav ul li.dropdown#futebol:target ul.dropdown-content {
+	display: flex;
 }

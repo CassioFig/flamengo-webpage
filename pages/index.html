@@ -7,7 +7,10 @@
 	<link rel="stylesheet" href="../css/styles.css">
 	<link rel="stylesheet" href="../css/header.css">
 	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" href="../css/footer.css">
 
+	<!-- Dependencies -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -17,39 +20,55 @@
 <body>
 	<header>
 		<section class="top-header">
-			<section class="top-header-middle">
-				<div>
+			<div class="middle-container">
+				<div class="publicity">
 					<a href="#">Seja Sócio-Torcedor</a>
 					<a href="#">Aproveite o FLA Prêmios</a>
 				</div>
-				<div>
-					<img src="../assets/adidas.png" alt="adidas-logo">
+				<div class="icons-area">
+					<img id="adidas-logo" src="../assets/adidas.png" alt="adidas-logo">
+					<div class="icons-media">
+						<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+						<a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+						<a href="#"><i class="fa-brands fa-instagram"></i></a>
+						<a href="#"><i class="fa-brands fa-youtube"></i></a>
+						<a href="#"><i class="fa-brands fa-tiktok"></i></a>
+						<a href="#"><i class="fa fa-magnifying-glass"></i></a>
+					</div>
 				</div>
-			</section>
+			</div>
 		</section>
 		<section class="bottom-header">
-			<div class="logo-menu">
-				<a href="#">
-					<img src="../assets/logo-menu-md.png" alt="Flamengo Logo">
-				</a>
+			<div class="middle-container">
+				<nav>
+					<div class="logo-menu">
+						<a href="#">
+							<img src="../assets/logo-menu-md.png" alt="Flamengo Logo">
+						</a>
+					</div>
+					<ul>
+						<li class="dropdown" id="futebol">
+							<a href="#">Futebol <i class="fa fa-caret-down" style="font-size: 12px;"></i></a>
+							<ul class="dropdown-content">
+								<li><a href="#">Página Inicial</a></li>
+								<li><a href="#">Elenco</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Ingressos</a></li>
+						<li><a href="#">Sócio-Torcedor</a></li>
+						<li><a href="#">Basquete</a></li>
+						<li><a href="#">Olímpicos</a></li>
+						<li><a href="#">Fla-Anjo</a></li>
+						<li><a href="#">Fla Prêmios</a></li>
+						<li><a href="#">Loja</a></li>
+						<li><a href="#">Clube</a></li>
+					</ul>
+				</nav>
 			</div>
-			<nav>
-				<ul>
-					<li><a href="#">Futebol</a></li>
-					<li><a href="#">Ingressos</a></li>
-					<li><a href="#">Sócio-Torcedor</a></li>
-					<li><a href="#">Basquete</a></li>
-					<li><a href="#">Olímpicos</a></li>
-					<li><a href="#">Fla-Anjo</a></li>
-					<li><a href="#">Fla Prêmios</a></li>
-					<li><a href="#">Loja</a></li>
-					<li><a href="#">Clube</a></li>
-				</ul>
-			</nav>
 		</section>
 	</header>
 	<main>
-		<section class="slides-section">
+		<!-- <section class="slides-section">
 			<div id="left" class="slide-container">
 				<div class="slide-container-top">
 					<span class="slide-tag">FUTEBOL</span>
@@ -79,9 +98,13 @@
 						</p>
 					</div>
 				</div>
-		</section>
+		</section> -->
 	</main>
-	<footer></footer>
+	<footer>
+		<!-- <section id="white-section">x</section>
+		<section id="addresses">x</section>
+		<section id="sponsors">x</section> -->
+	</footer>
 </body>
 
 </html>

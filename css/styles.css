@@ -15,3 +15,9 @@ body {
 	grid-template-rows: auto 1fr auto;
 	height: 100vh;
 }
+
+.middle-container {
+	max-width: 1140px;
+	margin-right: auto;
+	margin-left: auto;
+}
