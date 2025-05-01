@@ -21,3 +21,15 @@ body {
 	margin-right: auto;
 	margin-left: auto;
 }
+
+@media (max-width: 768px) {
+	.middle-container {
+		max-width: 720px;
+	}
+}
+
+@media (max-width: 480px) {
+	.middle-container {
+		max-width: 100%;
+	}
+}

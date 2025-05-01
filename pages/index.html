@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="../css/header.css">
 	<link rel="stylesheet" href="../css/main.css">
 	<link rel="stylesheet" href="../css/footer.css">
+	<script src="../js/index.js"></script>
 
 	<!-- Dependencies -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -26,14 +27,14 @@
 					<a href="#">Aproveite o FLA Prêmios</a>
 				</div>
 				<div class="icons-area">
-					<img id="adidas-logo" src="../assets/adidas.png" alt="adidas-logo">
+					<img id="adidas-logo" src="../assets/icons/adidas.png" alt="adidas-logo">
 					<div class="icons-media">
 						<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
 						<a href="#"><i class="fa-brands fa-x-twitter"></i></a>
 						<a href="#"><i class="fa-brands fa-instagram"></i></a>
 						<a href="#"><i class="fa-brands fa-youtube"></i></a>
 						<a href="#"><i class="fa-brands fa-tiktok"></i></a>
-						<a href="#"><i class="fa fa-magnifying-glass"></i></a>
+						<a href="#" class="hide-element-nr"><i class="fa fa-magnifying-glass"></i></a>
 					</div>
 				</div>
 			</div>
@@ -41,12 +42,25 @@
 		<section class="bottom-header">
 			<div class="middle-container">
 				<nav>
-					<div class="logo-menu">
-						<a href="#">
-							<img src="../assets/logo-menu-md.png" alt="Flamengo Logo">
-						</a>
+					<div class="logo-area">
+						<button 
+							type="button" 
+							aria-label="Menu" 
+							class="menu-button" 
+							onclick="toggleMenu()"
+						>
+							<i class="fa-solid fa-bars"></i>
+						</button>
+						<div class="logo-menu">
+							<a href="#">
+								<img src="../assets/images/logo-menu-md.png" alt="Flamengo Logo">
+							</a>
+						</div>
+						<button type="button" aria-label="Search" class="search-button">
+							<i class="fa fa-magnifying-glass"></i>
+						</button>
 					</div>
-					<ul>
+					<ul class="hide-element-nr">
 						<li class="dropdown" id="futebol">
 							<a href="#">Futebol <i class="fa fa-caret-down" style="font-size: 12px;"></i></a>
 							<ul class="dropdown-content">
