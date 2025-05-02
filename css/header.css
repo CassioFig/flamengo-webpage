@@ -66,6 +66,7 @@ header {
 	position: absolute;
 	top: -93px;
 	left: -13%;
+	z-index: 9999;
 }
 
 .logo-menu img {
@@ -188,7 +189,7 @@ header {
 
 	.logo-menu {
 		top: -48px;
-		left: 45%;
+		left: 44.8%;
 	}
 
 	.logo-menu img {
