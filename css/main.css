@@ -2,6 +2,8 @@ main {
 	grid-area: main;
 }
 
+/* Slides Section - Start */
+
 main .slides-section {
 	width: 100%;
 	height: 480px;
@@ -85,5 +87,143 @@ main .slides-section .image-container-caption .caption-information p {
 
 	main .slides-section .image-container {
 		width: 100%;
+	}
+}
+
+/* Slides Section - End */
+
+/* Information Section - Start */
+
+main .informations-section {
+	background-color: #efefef;
+}
+
+main .informations-section .middle-container {
+	display: flex;
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+}
+
+main .informations-section .info-container {
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+
+main .informations-section .info-container h2 {
+	padding-right: .5rem;
+	padding-left: .5rem;
+	font-size: 1.25rem;
+	line-height: 1.75rem;
+	text-transform: uppercase;
+	border-left: 3px solid;
+	border-color: #d2232a;
+	margin-bottom: .5rem;
+}
+
+main .informations-section .info-container ul {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+
+main .informations-section .info-container ul li a {
+	font-size: 0.9375rem;
+	color: #a6a5a5;
+	text-transform: uppercase;
+	font-weight: 600;
+	padding: 0 10px;
+	text-decoration: none;
+}
+
+main .informations-section .info-container ul li.active a {
+	background-color: #d2232a;
+	color: #fff;
+	border-radius: .25rem;
+}
+
+main .informations-section .info-container .info-container-content {
+	text-align: center;
+}
+
+main .informations-section .info-container .info-container-content h3 {
+	font-size: 1.875rem;
+	line-height: 1.875rem;
+	text-transform: uppercase;
+}
+
+main .informations-section .info-container .info-container-content #championship {
+	font-size: 1.25rem;
+	line-height: 1.25rem;
+	text-transform: uppercase;
+	color: #333;
+	font-weight: 600;
+	margin-bottom: 1.5rem;
+}
+
+main .informations-section .info-container .info-container-content figure {
+	margin-bottom: 1rem;
+}
+
+main .informations-section .info-container .info-container-content figure img {
+	width: 84px;
+}
+
+main .informations-section .info-container .info-container-content p#stadium,
+main .informations-section .info-container .info-container-content p#date {
+	font-size: 1.15rem;
+	line-height: 1.15rem;
+	font-weight: 600;
+	color: #d2232a;
+	text-transform: uppercase;
+}
+
+main .informations-section .info-container .info-container-content p#date {
+	margin-bottom: 10px;
+}
+
+main .informations-section .info-container .info-container-content table thead th{
+	font-size: .875rem;
+	font-weight: normal;
+	color: #333;
+}
+
+main .informations-section .info-container .info-container-content table tbody img {
+	height: 25px;
+}
+
+main .informations-section .info-container .info-container-content table tbody tr {
+	text-transform: uppercase;
+	font-size: 1.25rem;
+}
+
+main .informations-section .info-container .info-container-content table tbody tr td:nth-child(-n+4) {
+	font-weight: 700;
+}
+
+main .informations-section .info-container .info-container-content table caption {
+	caption-side: bottom;
+	text-align: right;
+	margin-top: .5rem;;
+}
+
+main .informations-section .info-container .info-container-content table caption a {
+	text-decoration: none;
+	color: #d2232a;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 1rem;
+	line-height: 1.35rem;
+}
+
+@media (max-width: 480px) {
+	main .informations-section .middle-container .info-container:nth-child(1) {
+		width: 369px;
+	}
+	main .informations-section .middle-container  {
+		flex-direction: column;
 	}
 }
