@@ -185,7 +185,7 @@ main .informations-section .info-container .info-container-content p#date {
 	margin-bottom: 10px;
 }
 
-main .informations-section .info-container .info-container-content table thead th{
+main .informations-section .info-container .info-container-content table thead th {
 	font-size: .875rem;
 	font-weight: normal;
 	color: #333;
@@ -207,7 +207,8 @@ main .informations-section .info-container .info-container-content table tbody t
 main .informations-section .info-container .info-container-content table caption {
 	caption-side: bottom;
 	text-align: right;
-	margin-top: .5rem;;
+	margin-top: .5rem;
+	;
 }
 
 main .informations-section .info-container .info-container-content table caption a {
@@ -223,7 +224,130 @@ main .informations-section .info-container .info-container-content table caption
 	main .informations-section .middle-container .info-container:nth-child(1) {
 		width: 369px;
 	}
-	main .informations-section .middle-container  {
+
+	main .informations-section .middle-container {
 		flex-direction: column;
 	}
 }
+
+/* Information Section - End */
+
+/* Article Component - Start */
+
+main .article-component .header {
+	display: flex;
+	justify-content: flex-start;
+}
+
+main .article-component .header h2 {
+	font-size: 2.25rem;
+	line-height: 2.0rem;
+	text-transform: uppercase;
+	color: #333;
+	width: 75%;
+}
+
+main .article-component .header a {
+	font-size: 1rem;
+	line-height: 1.35rem;
+	text-transform: uppercase;
+	color: #d2232a;
+	width: 25%;
+	text-decoration: none;
+	font-weight: 700;
+	text-align: right;
+}
+
+main .article-component hr {
+	margin-bottom: 1rem;
+	margin-top: .25rem;
+	border-color: #343a40;
+	border-width: 1px 0 0;
+}
+
+/* Article Component - End */
+
+/* News Section - Start */
+
+main .news-section {
+	padding-top: 3rem;
+}
+
+main .news-section .middle-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+main .news-section .middle-container .article-component {
+	flex: 0 0 50%;
+	max-width: 50%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-bottom: 1.5rem;
+}
+
+main .news-section .middle-container .article-component figure {
+	position: relative;
+	overflow: hidden;
+}
+
+main .news-section .middle-container .article-component figure img {
+	vertical-align: middle;
+	max-width: 100%;
+	height: auto;
+}
+
+main .news-section .middle-container .article-component figure figcaption {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+main .news-section .middle-container .article-component .article-notice {
+	background: rgba(0, 0, 0, 0.6);
+	padding: 18px 26px;
+}
+
+main .news-section .middle-container .article-component .tag {
+	background: #d2232a;
+	padding: 6px 15px 4px;
+	position: relative;
+	bottom: 2px;
+	font-size: 1rem;
+	left: 25px;
+	color: #f8f9fa;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+main .news-section .middle-container .article-component .article-notice h3 {
+	font-size: 1.59375rem;
+	line-height: 1.5rem;
+	color: #f8f9fa;
+	text-transform: uppercase;
+	margin-bottom: .5rem;
+}
+
+main .news-section .middle-container .article-component .article-notice p {
+	font-size: 1.06rem;
+	font-weight: 400;
+	line-height: 1rem;
+	color: #f8f9fa;
+}
+
+main .news-section .middle-container .article-component:hover {
+	cursor: pointer;
+}
+
+main .news-section .middle-container .article-component:hover .article-notice {
+	background-color: rgba(0, 0, 0, 0.9);
+}
+
+@media (max-width: 480px) {
+	main .news-section .middle-container .article-component {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+}
+
+/* News Section - End */
