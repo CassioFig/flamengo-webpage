@@ -371,12 +371,26 @@ main .flatv-section .article-component .videos .thumb h4 {
 	margin-bottom: .5rem;
 }
 
+main .flatv-section .article-component .videos .thumb:hover h3,
+main .flatv-section .article-component .videos .thumb:hover h4 {
+	color: #d2232a;
+	cursor: pointer;
+}
+
 main .flatv-section .article-component .videos .thumb p {
 	font-size: 1rem;
 	line-height: 1rem;
 	font-weight: 600;
 	color: #666;
 	margin: 0 0 10px 0;
+}
+
+main .flatv-section .article-component .videos .thumb p:hover {
+	cursor: pointer;
+}
+
+main .flatv-section .article-component .videos .thumb:hover figure:hover {
+	cursor: pointer;
 }
 
 main .flatv-section .article-component .videos #left {
@@ -479,7 +493,84 @@ main .flatv-section .article-component .videos #right .thumb .info {
 
 	main .flatv-section .article-component .videos #right .thumb figure img {
 		min-width: 167px;
-    height: 80px;
-    max-width: none;
+		height: 80px;
+		max-width: none;
+	}
+}
+
+/* FlaTV Section - End */
+
+/* Photos Section - Start */
+
+main .photos-section .middle-container .article-component {
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+main .photos-section .middle-container .article-component .photos {
+	display: flex;
+}
+
+main .photos-section .middle-container .article-component .photos figure {
+	flex: 0 0 33.333333%;
+	max-width: 33.333333%;
+	margin-bottom: 1.5rem !important;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+main .photos-section .middle-container .article-component .photos figure img {
+	max-width: 100%;
+	height: auto;
+	width: auto;
+}
+
+main .photos-section .middle-container .article-component .photos figure figcaption time {
+	color: #d2232a;
+	font-weight: 700;
+	font-size: 1rem;
+}
+
+main .photos-section .middle-container .article-component .photos figure figcaption h3 {
+	font-size: 1.875rem;
+	line-height: 1.45rem;
+	margin-bottom: .25rem !important;
+	word-break: break-all;
+	text-transform: uppercase;
+}
+
+main .photos-section .middle-container .article-component .photos figure figcaption p {
+	font-size: 1rem;
+	line-height: 1rem;
+	font-weight: 600;
+	color: #666;
+	margin: 0 0 10px 0;
+}
+
+@media (max-width: 480px) {
+	main .photos-section .middle-container .article-component .photos {
+		flex-direction: column;
+	}
+
+	main .photos-section .middle-container .article-component .photos figure {
+		flex: 0 0 100%;
+		max-width: 100%;
+		padding: 0 !important;
+	}
+
+	main .photos-section .middle-container .article-component .photos figure img {
+		width: 100%;
+	}
+
+	main .photos-section .middle-container .article-component .photos figure figcaption h3 {
+		font-size: 1rem;
+		line-height: 1rem;
+		margin: 0 !important;
+	}
+
+	main .photos-section .middle-container .article-component .photos figure figcaption p {
+		font-size: 0.9375rem;
+		line-height: 15px;
+		font-weight: normal;
 	}
 }
