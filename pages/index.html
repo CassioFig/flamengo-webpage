@@ -4,7 +4,6 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="../css/styles.css">
 	<link rel="stylesheet" href="../css/header.css">
 	<link rel="stylesheet" href="../css/main.css">
 	<link rel="stylesheet" href="../css/footer.css">
@@ -16,6 +15,44 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 	<title>Clubes de Regata do Flamengo</title>
+
+	<style>
+		* {
+			box-sizing: border-box;
+			padding: 0;
+			margin: 0;
+			font-family: "Rajdhani", sans-serif;
+		}
+
+		body {
+			display: grid;
+			grid-template-areas:
+				"header	header"
+				"main		main"
+				"footer	footer";
+			grid-template-columns: 1fr;
+			grid-template-rows: auto 1fr auto;
+			height: 100vh;
+		}
+
+		.middle-container {
+			max-width: 1140px;
+			margin-right: auto;
+			margin-left: auto;
+		}
+
+		@media (max-width: 768px) {
+			.middle-container {
+				max-width: 720px;
+			}
+		}
+
+		@media (max-width: 480px) {
+			.middle-container {
+				max-width: 100%;
+			}
+		}
+	</style>
 </head>
 
 <body>
@@ -388,6 +425,22 @@
 						</figure>
 					</div>
 				</article>
+			</div>
+		</section>
+		<section class="sponsors-section">
+			<div class="middle-container">
+				<a href="#" style="padding-left: 0;">
+					<img src="../assets/icons/sponsor1.png" alt="Adidas">
+				</a>
+				<a href="#">
+					<img src="../assets/icons/sponsor2.png" alt="BRB">
+				</a>
+				<a href="#" style="padding-right: 0;">
+					<img src="../assets/icons/sponsor3.png" alt="pixBet">
+				</a>
+				<a href="#">
+					<img src="../assets/icons/sponsor4.png" alt="nacao">
+				</a>
 			</div>
 		</section>
 	</main>

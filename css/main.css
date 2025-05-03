@@ -574,3 +574,34 @@ main .photos-section .middle-container .article-component .photos figure figcapt
 		font-weight: normal;
 	}
 }
+
+/* Photos Section - End */
+
+/* Sponsors Section - Start */
+
+main .sponsors-section .middle-container {
+	padding-right: 15px;
+	padding-left: 15px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+main .sponsors-section .middle-container a {
+	flex: 0 0 33.333333%;
+	max-width: 33.333333%;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+main .sponsors-section .middle-container a img {
+	width: 100%;
+}
+
+@media (max-width: 480px) { 
+	main .sponsors-section .middle-container a {
+		flex: 0 0 100%;
+		max-width: 100%;
+		padding: 0;
+	}
+}
