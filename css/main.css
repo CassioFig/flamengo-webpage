@@ -539,6 +539,11 @@ main .photos-section .middle-container .article-component .photos figure figcapt
 	text-transform: uppercase;
 }
 
+main .photos-section .middle-container .article-component .photos figure:hover h3 {
+	color: #d2232a;
+	cursor: pointer;
+}
+
 main .photos-section .middle-container .article-component .photos figure figcaption p {
 	font-size: 1rem;
 	line-height: 1rem;
@@ -605,3 +610,5 @@ main .sponsors-section .middle-container a img {
 		padding: 0;
 	}
 }
+
+/* Sponsors Section - End */
