@@ -1,0 +1,91 @@
+main section.page-title {
+	width: 100%;
+	background-image: url("../assets/images/bg-top.png");
+	border-bottom: 3px solid #535353;
+	background-size: cover;
+	background-position: center center;
+	height: 75px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+main section.page-title h2 {
+	font-size: 1.575rem;
+	color: #f8f9fa;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+main section.team .middle-container {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+
+main section.team .team-position h2 {
+	border-left: 3px solid #dc3545;
+	padding-left: 0.8125rem;
+	font-size: 1.625rem;
+	font-weight: 800;
+	text-transform: uppercase;
+	line-height: 1.14;
+	margin-bottom: 1rem;
+}
+
+main section.team .team-position figure {
+	position: relative;
+	margin-bottom: 25px;
+	height: 331px;
+	overflow: hidden;
+	width: 181px;
+	display: inline-block;
+}
+
+main section.team .team-position figure .player-image {
+	width: 100%;
+	height: 298px;
+	position: relative;
+	overflow: hidden;
+	border: 1px solid rgba(0, 0, 0, .1);
+}
+
+main section.team .team-position figure .player-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center center;
+}
+
+main section.team .team-position figure figcaption {
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 90%;
+	margin: 0 auto;
+	bottom: 6px;
+	padding: 5px;
+	background: #d2232a !important;
+	color: #f8f9fa;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+main section.team .team-position figure figcaption p {
+	font-size: 1.3rem;
+	line-height: 1.3;
+	font-weight: 700;
+}
+
+@media (max-width: 480px) {
+	main section.team .team-position {
+		padding-right: 15px;
+    padding-left: 15px;
+	}
+
+	main section.team .team-position .team-players {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: .2rem;
+	}
+}
