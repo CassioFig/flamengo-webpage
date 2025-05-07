@@ -429,6 +429,8 @@ main .flatv-section .article-component .videos #right .thumb figure {
 	display: flex;
 	justify-content: center;
 	overflow: hidden;
+	float: left;
+	margin-right: .8rem;
 }
 
 main .flatv-section .article-component .videos #right .thumb figure img {
@@ -486,8 +488,7 @@ main .flatv-section .article-component .videos #right .thumb .info {
 
 	main .flatv-section .article-component .videos #right .thumb figure {
 		width: 60%;
-		display: flex;
-		justify-content: center;
+		clear: left;
 		overflow: hidden;
 	}
 

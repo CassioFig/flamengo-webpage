@@ -106,11 +106,19 @@ header {
 	font-size: 1.0411457419rem;
 	font-weight: 600;
 	text-decoration: none;
+}
+
+.bottom-header nav ul a:link,
+.bottom-header nav ul a:visited {
 	color: #ffffff;
 }
 
 .bottom-header nav ul a:hover {
 	color: #d2232a;
+}
+
+.bottom-header nav ul a:active {
+	color: #ffffff;
 }
 
 .bottom-header nav ul ul.dropdown-content {
