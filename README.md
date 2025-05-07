@@ -12,7 +12,7 @@ This project is a clone of the official website of Flamengo, a renowned football
 ## Author
 
 - **Cassio Figueredo**  
-  Developer and designer of this project.
+  Developer.
 
 ## How to Use
 
@@ -33,10 +33,6 @@ This project is a clone of the official website of Flamengo, a renowned football
 - **`css/`**: Includes stylesheets for the header, footer, and main content.
 - **`assets/`**: Stores images, icons, and other media files.
 - **`js/`**: Contains JavaScript files for interactivity.
-
-## Contributing
-
-Contributions are welcome! Feel free to fork the repository and submit a pull request with your improvements.
 
 ## License
 
