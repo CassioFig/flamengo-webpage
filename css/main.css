@@ -2,71 +2,614 @@ main {
 	grid-area: main;
 }
 
-/* Slide Styles - BEGIN */
+/* Slides Section - Start */
 
-.slide-container {
-	display: flex;
-	flex-direction: column;
-	justify-content: end;
-	align-items: center;
-	width: 50%;
+main .slides-section {
+	width: 100%;
 	height: 480px;
-	float: left;
-}
-
-.slide-container#left {
-	background-image: url("../assets/home-slide1.png");
-	background-size: cover;
-	background-position: right;
-	border-right: 4px solid #535353;
-}
-
-.slide-container#right {
-	background-image: url("../assets/home-slide2.png");
-	background-size: cover;
-	background-position: left;
-}
-
-.slide-container-top {
-	width: 100%;
-}
-
-.slide-container-bottom {
-	width: 100%;
 	display: flex;
-	justify-content: center;
+	flex-direction: row;
 }
 
-.slide-container .slide-tag {
-	background-color: #d2232a;
-	font-weight: 600;
-	color: #ffffff;
-	padding: 2px 7px 2px 7px;
-	margin-left: 120px;
+main .slides-section .image-container {
+	position: relative;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 50%;
+	height: 100%;
 }
 
-.slide-container .slide-information {
-	background-color: rgba(0, 0, 0, 0.7);
-	color: #ffffff;
+main .slides-section .image-container#left {
+	background-image: url('../assets/images/home-slide1.png');
+}
+
+main .slides-section .image-container#right {
+	background-image: url('../assets/images/home-slide2.png');
+}
+
+main .slides-section .image-container-caption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
 	width: 80%;
-	padding: 25px;
-	-webkit-transition: all .4sease-in-out;
-	-o-transition: all .4s ease-in-out;
-	transition: all .4s ease-in-out;
 }
 
-.slide-container .slide-information h2 {
-	text-transform: uppercase;
-	line-height: 1.45rem;
-	margin-bottom: 5px;
-}
-
-.slide-container:hover {
+main .slides-section .image-container:hover {
 	cursor: pointer;
 }
 
-.slide-container:hover .slide-information {
+main .slides-section .image-container-caption .caption-tag span {
+	background-color: #d2232a;
+	color: #fff;
+	font-weight: 700;
+	margin-left: 25px;
+	text-transform: uppercase;
+	padding-right: .5rem !important;
+	padding-left: .5rem !important;
+}
+
+main .slides-section .image-container-caption .caption-information {
+	background-color: rgba(0, 0, 0, 0.7);
+	color: #fff;
+	padding: 1.5rem;
+}
+
+
+main .slides-section .image-container:hover .caption-information {
 	background-color: rgba(0, 0, 0, 0.9);
 }
 
-/* Slide Styles - END */
+main .slides-section .image-container-caption .caption-information h2 {
+	line-height: 1.45rem;
+	margin-bottom: .5rem;
+}
+
+main .slides-section .image-container-caption .caption-information p {
+	font-size: 1rem;
+	line-height: 1rem;
+}
+
+@media (max-width: 768px) {
+	main .slides-section .image-container-caption {
+		width: 100%;
+	}
+}
+
+@media (max-width: 480px) {
+	main .slides-section {
+		flex-direction: column;
+		height: calc(480px * 2);
+	}
+
+	main .slides-section .image-container {
+		width: 100%;
+	}
+}
+
+/* Slides Section - End */
+
+/* Information Section - Start */
+
+main .informations-section {
+	background-color: #efefef;
+}
+
+main .informations-section .middle-container {
+	display: flex;
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+}
+
+main .informations-section .info-container {
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+
+main .informations-section .info-container h2 {
+	padding-right: .5rem;
+	padding-left: .5rem;
+	font-size: 1.25rem;
+	line-height: 1.75rem;
+	text-transform: uppercase;
+	border-left: 3px solid;
+	border-color: #d2232a;
+	margin-bottom: .5rem;
+}
+
+main .informations-section .info-container ul {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+
+main .informations-section .info-container ul li a {
+	font-size: 0.9375rem;
+	color: #a6a5a5;
+	text-transform: uppercase;
+	font-weight: 600;
+	padding: 0 10px;
+	text-decoration: none;
+}
+
+main .informations-section .info-container ul li.active a {
+	background-color: #d2232a;
+	color: #fff;
+	border-radius: .25rem;
+}
+
+main .informations-section .info-container .info-container-content {
+	text-align: center;
+}
+
+main .informations-section .info-container .info-container-content h3 {
+	font-size: 1.875rem;
+	line-height: 1.875rem;
+	text-transform: uppercase;
+}
+
+main .informations-section .info-container .info-container-content #championship {
+	font-size: 1.25rem;
+	line-height: 1.25rem;
+	text-transform: uppercase;
+	color: #333;
+	font-weight: 600;
+	margin-bottom: 1.5rem;
+}
+
+main .informations-section .info-container .info-container-content figure {
+	margin-bottom: 1rem;
+}
+
+main .informations-section .info-container .info-container-content figure img {
+	width: 84px;
+}
+
+main .informations-section .info-container .info-container-content p#stadium,
+main .informations-section .info-container .info-container-content p#date {
+	font-size: 1.15rem;
+	line-height: 1.15rem;
+	font-weight: 600;
+	color: #d2232a;
+	text-transform: uppercase;
+}
+
+main .informations-section .info-container .info-container-content p#date {
+	margin-bottom: 10px;
+}
+
+main .informations-section .info-container .info-container-content table thead th {
+	font-size: .875rem;
+	font-weight: normal;
+	color: #333;
+}
+
+main .informations-section .info-container .info-container-content table tbody img {
+	height: 25px;
+}
+
+main .informations-section .info-container .info-container-content table tbody tr {
+	text-transform: uppercase;
+	font-size: 1.25rem;
+}
+
+main .informations-section .info-container .info-container-content table tbody tr td:nth-child(-n+4) {
+	font-weight: 700;
+}
+
+main .informations-section .info-container .info-container-content table caption {
+	caption-side: bottom;
+	text-align: right;
+	margin-top: .5rem;
+	;
+}
+
+main .informations-section .info-container .info-container-content table caption a {
+	text-decoration: none;
+	color: #d2232a;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 1rem;
+	line-height: 1.35rem;
+}
+
+@media (max-width: 480px) {
+	main .informations-section .middle-container .info-container:nth-child(1) {
+		width: 369px;
+	}
+
+	main .informations-section .middle-container {
+		flex-direction: column;
+	}
+}
+
+/* Information Section - End */
+
+/* Article Component - Start */
+
+main .article-component .header {
+	display: flex;
+	justify-content: flex-start;
+}
+
+main .article-component .header h2 {
+	font-size: 2.25rem;
+	line-height: 2.0rem;
+	text-transform: uppercase;
+	color: #333;
+	width: 75%;
+}
+
+main .article-component .header a {
+	font-size: 1rem;
+	line-height: 1.35rem;
+	text-transform: uppercase;
+	color: #d2232a;
+	width: 25%;
+	text-decoration: none;
+	font-weight: 700;
+	text-align: right;
+}
+
+main .article-component hr {
+	margin-bottom: 1rem;
+	margin-top: .25rem;
+	border-color: #343a40;
+	border-width: 1px 0 0;
+}
+
+/* Article Component - End */
+
+/* News Section - Start */
+
+main .news-section {
+	padding-top: 3rem;
+}
+
+main .news-section .middle-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+main .news-section .middle-container .article-component {
+	flex: 0 0 50%;
+	max-width: 50%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-bottom: 1.5rem;
+}
+
+main .news-section .middle-container .article-component figure {
+	position: relative;
+	overflow: hidden;
+}
+
+main .news-section .middle-container .article-component figure img {
+	vertical-align: middle;
+	max-width: 100%;
+	height: auto;
+}
+
+main .news-section .middle-container .article-component figure figcaption {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+main .news-section .middle-container .article-component .article-notice {
+	background: rgba(0, 0, 0, 0.6);
+	padding: 18px 26px;
+}
+
+main .news-section .middle-container .article-component .tag {
+	background: #d2232a;
+	padding: 6px 15px 4px;
+	position: relative;
+	bottom: 2px;
+	font-size: 1rem;
+	left: 25px;
+	color: #f8f9fa;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+main .news-section .middle-container .article-component .article-notice h3 {
+	font-size: 1.59375rem;
+	line-height: 1.5rem;
+	color: #f8f9fa;
+	text-transform: uppercase;
+	margin-bottom: .5rem;
+}
+
+main .news-section .middle-container .article-component .article-notice p {
+	font-size: 1.06rem;
+	font-weight: 400;
+	line-height: 1rem;
+	color: #f8f9fa;
+}
+
+main .news-section .middle-container .article-component:hover {
+	cursor: pointer;
+}
+
+main .news-section .middle-container .article-component:hover .article-notice {
+	background-color: rgba(0, 0, 0, 0.9);
+}
+
+@media (max-width: 480px) {
+	main .news-section .middle-container .article-component {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+}
+
+/* News Section - End */
+
+/* FlaTV Section - Start */
+
+main .flatv-section .middle-container .article-component {
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+main .flatv-section .middle-container .article-component .videos {
+	display: flex;
+}
+
+main .flatv-section .article-component .videos .thumb h3,
+main .flatv-section .article-component .videos .thumb h4 {
+	font-size: 1.875rem;
+	line-height: 1.45rem;
+	text-transform: uppercase;
+	margin-bottom: .5rem;
+}
+
+main .flatv-section .article-component .videos .thumb:hover h3,
+main .flatv-section .article-component .videos .thumb:hover h4 {
+	color: #d2232a;
+	cursor: pointer;
+}
+
+main .flatv-section .article-component .videos .thumb p {
+	font-size: 1rem;
+	line-height: 1rem;
+	font-weight: 600;
+	color: #666;
+	margin: 0 0 10px 0;
+}
+
+main .flatv-section .article-component .videos .thumb p:hover {
+	cursor: pointer;
+}
+
+main .flatv-section .article-component .videos .thumb:hover figure:hover {
+	cursor: pointer;
+}
+
+main .flatv-section .article-component .videos #left {
+	flex: 0 0 66.666667%;
+	max-width: 66.666667%;
+	margin-bottom: 1.5rem;
+	padding-right: 15px;
+}
+
+main .flatv-section .article-component .videos #left .thumb figure {
+	margin: 0 0 1rem;
+}
+
+main .flatv-section .article-component .videos #left .thumb figure img {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+}
+
+main .flatv-section .article-component .videos #right {
+	flex: 0 0 33.333333%;
+	max-width: 33.333333%;
+	margin-bottom: 1.5rem;
+	padding-left: 15px;
+}
+
+main .flatv-section .article-component .videos #right .thumb {
+	display: flex;
+	padding-bottom: .5rem;
+}
+
+main .flatv-section .article-component .videos #right .thumb figure {
+	width: 61.6%;
+	min-width: 132px;
+	max-width: 132px;
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+	float: left;
+	margin-right: .8rem;
+}
+
+main .flatv-section .article-component .videos #right .thumb figure img {
+	min-width: 229px;
+	height: 110px;
+	width: auto;
+	vertical-align: middle;
+}
+
+main .flatv-section .article-component .videos #right .thumb .info {
+	padding-left: .5rem;
+}
+
+@media (max-width: 768px) {
+	main .flatv-section .article-component .videos #left {
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+
+	main .flatv-section .article-component .videos #right {
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+}
+
+@media (max-width: 480px) {
+	main .flatv-section .middle-container .article-component .videos {
+		flex-direction: column;
+	}
+
+	main .flatv-section .article-component .videos #left {
+		flex: 0 0 100%;
+		max-width: 100%;
+		padding-right: 0;
+	}
+
+	main .flatv-section .article-component .videos #right {
+		flex: 0 0 100%;
+		max-width: 100%;
+		padding-left: 0;
+	}
+
+	main .flatv-section .article-component .videos .thumb h3,
+	main .flatv-section .article-component .videos .thumb h4 {
+		font-size: 1rem;
+		line-height: 1rem;
+		margin-bottom: 0;
+	}
+
+	main .flatv-section .article-component .videos .thumb p {
+		font-size: 0.9375rem;
+		line-height: 15px;
+		font-weight: normal;
+	}
+
+	main .flatv-section .article-component .videos #right .thumb figure {
+		width: 60%;
+		clear: left;
+		overflow: hidden;
+	}
+
+	main .flatv-section .article-component .videos #right .thumb figure img {
+		min-width: 167px;
+		height: 80px;
+		max-width: none;
+	}
+}
+
+/* FlaTV Section - End */
+
+/* Photos Section - Start */
+
+main .photos-section .middle-container .article-component {
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+main .photos-section .middle-container .article-component .photos {
+	display: flex;
+}
+
+main .photos-section .middle-container .article-component .photos figure {
+	flex: 0 0 33.333333%;
+	max-width: 33.333333%;
+	margin-bottom: 1.5rem !important;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+main .photos-section .middle-container .article-component .photos figure img {
+	max-width: 100%;
+	height: auto;
+	width: auto;
+}
+
+main .photos-section .middle-container .article-component .photos figure figcaption time {
+	color: #d2232a;
+	font-weight: 700;
+	font-size: 1rem;
+}
+
+main .photos-section .middle-container .article-component .photos figure figcaption h3 {
+	font-size: 1.875rem;
+	line-height: 1.45rem;
+	margin-bottom: .25rem !important;
+	word-break: break-all;
+	text-transform: uppercase;
+}
+
+main .photos-section .middle-container .article-component .photos figure:hover h3 {
+	color: #d2232a;
+	cursor: pointer;
+}
+
+main .photos-section .middle-container .article-component .photos figure figcaption p {
+	font-size: 1rem;
+	line-height: 1rem;
+	font-weight: 600;
+	color: #666;
+	margin: 0 0 10px 0;
+}
+
+@media (max-width: 480px) {
+	main .photos-section .middle-container .article-component .photos {
+		flex-direction: column;
+	}
+
+	main .photos-section .middle-container .article-component .photos figure {
+		flex: 0 0 100%;
+		max-width: 100%;
+		padding: 0 !important;
+	}
+
+	main .photos-section .middle-container .article-component .photos figure img {
+		width: 100%;
+	}
+
+	main .photos-section .middle-container .article-component .photos figure figcaption h3 {
+		font-size: 1rem;
+		line-height: 1rem;
+		margin: 0 !important;
+	}
+
+	main .photos-section .middle-container .article-component .photos figure figcaption p {
+		font-size: 0.9375rem;
+		line-height: 15px;
+		font-weight: normal;
+	}
+}
+
+/* Photos Section - End */
+
+/* Sponsors Section - Start */
+
+main .sponsors-section .middle-container {
+	padding-right: 15px;
+	padding-left: 15px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+main .sponsors-section .middle-container a {
+	flex: 0 0 33.333333%;
+	max-width: 33.333333%;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+main .sponsors-section .middle-container a img {
+	width: 100%;
+}
+
+@media (max-width: 480px) { 
+	main .sponsors-section .middle-container a {
+		flex: 0 0 100%;
+		max-width: 100%;
+		padding: 0;
+	}
+}
+
+/* Sponsors Section - End */
