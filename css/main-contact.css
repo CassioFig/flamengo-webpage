@@ -1,0 +1,113 @@
+main section.contact .middle-container {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+
+main section.contact form {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto auto auto auto;
+	gap: 1.5rem;
+}
+
+main section.contact form .input-div:nth-child(1) {
+	grid-column: 1;
+	grid-row: 1;
+}
+
+main section.contact form .input-div:nth-child(2) {
+	grid-column: 2;
+	grid-row: 1;
+}
+
+main section.contact form .input-div:nth-child(3) {
+	grid-column: 1 / 3;
+	grid-row: 2;
+}
+
+main section.contact form .input-div:nth-child(4) {
+	grid-column: 1 / 3;
+	grid-row: 3;
+}
+
+main section.contact form button {
+	grid-column: 1 / 3;
+	grid-row: 4;
+}
+
+main section.contact form .input-div {
+	display: flex;
+	flex-direction: column;
+}
+
+main section.contact form label {
+	margin-bottom: 0.5rem;
+	font-weight: 500;
+}
+
+main section.contact form input,
+main section.contact form textarea {
+	padding: 0.75rem;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+main section.contact form textarea {
+	resize: none;
+}
+
+main section.contact form button {
+	padding: 1rem 2rem;
+	background-color: #d2232a;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 1rem;
+	font-weight: 500;
+}
+
+main section.contact form button:hover {
+	background-color: #c50d1c;
+}
+
+@media (max-width: 768px) {
+	main section.contact .middle-container {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+
+	main section.contact form {
+		grid-template-columns: 1fr;
+		grid-template-rows: auto auto auto auto auto;
+	}
+
+	main section.contact form .input-div:nth-child(1),
+	main section.contact form .input-div:nth-child(2),
+	main section.contact form .input-div:nth-child(3),
+	main section.contact form .input-div:nth-child(4),
+	main section.contact form button {
+		grid-column: 1;
+	}
+
+	main section.contact form .input-div:nth-child(1) {
+		grid-row: 1;
+	}
+
+	main section.contact form .input-div:nth-child(2) {
+		grid-row: 2;
+	}
+
+	main section.contact form .input-div:nth-child(3) {
+		grid-row: 3;
+	}
+
+	main section.contact form .input-div:nth-child(4) {
+		grid-row: 4;
+	}
+
+	main section.contact form button {
+		grid-row: 5;
+	}
+}
+

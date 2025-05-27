@@ -154,7 +154,9 @@ header {
 }
 
 .bottom-header nav ul li.dropdown#futebol:hover ul.dropdown-content,
-.bottom-header nav ul li.dropdown#futebol:target ul.dropdown-content {
+.bottom-header nav ul li.dropdown#futebol:target ul.dropdown-content,
+.bottom-header nav ul li.dropdown#clube:hover ul.dropdown-content,
+.bottom-header nav ul li.dropdown#clube:target ul.dropdown-content {
 	display: flex;
 }
 

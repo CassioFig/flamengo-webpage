@@ -1,22 +1,3 @@
-main section.page-title {
-	width: 100%;
-	background-image: url("../assets/images/bg-top.png");
-	border-bottom: 3px solid #535353;
-	background-size: cover;
-	background-position: center center;
-	height: 75px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-main section.page-title h2 {
-	font-size: 1.575rem;
-	color: #f8f9fa;
-	font-weight: 700;
-	text-transform: uppercase;
-}
-
 main section.team .middle-container {
 	padding-top: 3rem;
 	padding-bottom: 3rem;

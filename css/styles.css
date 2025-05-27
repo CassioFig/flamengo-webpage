@@ -1,23 +1,18 @@
-* {
-	box-sizing: border-box;
-	padding: 0;
-	margin: 0;
-	font-family: "Rajdhani", sans-serif;
+main section.page-title {
+	width: 100%;
+	background-image: url("../assets/images/bg-top.png");
+	border-bottom: 3px solid #535353;
+	background-size: cover;
+	background-position: center center;
+	height: 75px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-body {
-	display: grid;
-	grid-template-areas:
-		"header	header"
-		"main		main"
-		"footer	footer";
-	grid-template-columns: 1fr;
-	grid-template-rows: auto 1fr auto;
-	height: 100vh;
-}
-
-.middle-container {
-	max-width: 1140px;
-	margin-right: auto;
-	margin-left: auto;
+main section.page-title h2 {
+	font-size: 1.575rem;
+	color: #f8f9fa;
+	font-weight: 700;
+	text-transform: uppercase;
 }
