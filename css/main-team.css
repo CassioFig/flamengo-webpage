@@ -4,7 +4,7 @@ main section.team .middle-container {
 }
 
 main section.team .team-position h2 {
-	border-left: 3px solid #dc3545;
+	border-left: 3px solid var(--bg-error);
 	padding-left: 0.8125rem;
 	font-size: 1.625rem;
 	font-weight: 800;
@@ -27,7 +27,7 @@ main section.team .team-position figure .player-image {
 	height: 298px;
 	position: relative;
 	overflow: hidden;
-	border: 1px solid rgba(0, 0, 0, .1);
+	border: 1px solid var(--border-light);
 }
 
 main section.team .team-position figure .player-image img {
@@ -45,8 +45,8 @@ main section.team .team-position figure figcaption {
 	margin: 0 auto;
 	bottom: 6px;
 	padding: 5px;
-	background: #d2232a !important;
-	color: #f8f9fa;
+	background: var(--primary-red) !important;
+	color: var(--text-white);
 	text-transform: uppercase;
 	text-align: center;
 }

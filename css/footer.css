@@ -3,7 +3,7 @@ footer {
 }
 
 footer .addresses {
-	background-color: #d2232a;
+	background-color: var(--primary-red);
 	padding-right: 1.5rem;
 	padding-left: 1.5rem;
 	padding-top: 3rem;
@@ -29,13 +29,13 @@ footer .addresses .middle-container address h4 {
 	line-height: 1.38;
 	font-weight: bold;
 	font-family: Rajdhani, sans-serif;
-	color: #ffffff;
+	color: var(--primary-white);
 }
 
 footer .addresses .middle-container address ul {
 	padding-left: 0;
 	list-style: none;
-	color: #ffffff;
+	color: var(--primary-white);
 	margin-top: 0;
 	margin-bottom: 1rem;
 }
@@ -49,7 +49,7 @@ footer .addresses .middle-container address ul {
 }
 
 footer .sponsors {
-	background-color: #000;
+	background-color: var(--primary-black);
 	width: 100%;
 	height: calc(598.59px + 167.19px);
 }
