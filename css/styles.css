@@ -1,6 +1,6 @@
 main section.page-title {
 	width: 100%;
-	background-image: url("../assets/images/bg-top.png");
+	background-image: url("../assets/images/bg-top.webp");
 	border-bottom: 3px solid var(--primary-gray);
 	background-size: cover;
 	background-position: center center;

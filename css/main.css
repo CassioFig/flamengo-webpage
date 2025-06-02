@@ -21,11 +21,11 @@ main .slides-section .image-container {
 }
 
 main .slides-section .image-container#left-slide {
-	background-image: url('../assets/images/home-slide1.png');
+	background-image: url('../assets/images/home-slide1.webp');
 }
 
 main .slides-section .image-container#right-slide {
-	background-image: url('../assets/images/home-slide2.png');
+	background-image: url('../assets/images/home-slide2.webp');
 }
 
 main .slides-section .image-container-caption {
