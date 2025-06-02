@@ -20,11 +20,11 @@ main .slides-section .image-container {
 	height: 100%;
 }
 
-main .slides-section .image-container#left {
+main .slides-section .image-container#left-slide {
 	background-image: url('../assets/images/home-slide1.png');
 }
 
-main .slides-section .image-container#right {
+main .slides-section .image-container#right-slide {
 	background-image: url('../assets/images/home-slide2.png');
 }
 
