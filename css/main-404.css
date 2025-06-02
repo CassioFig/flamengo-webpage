@@ -1,0 +1,63 @@
+main section.error {
+	background: url(../assets/images/bg-error.webp) no-repeat;
+	background-size: cover;
+	background-position: center center;
+	min-height: 400px;
+}
+
+main .error .middle-container {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	min-height: 400px;
+}
+
+main .error p:first-child {
+	color: #fff;
+	font-size: 1.375rem;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+main .error h2 {
+	line-height: 42px;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 2.625rem;
+	margin-bottom: .5rem;
+}
+
+main .error p:nth-child(3) {
+	font-size: 1.375rem;
+	font-weight: 300;
+	color: #fff;
+	line-height: 22px;
+}
+
+main .error p:nth-child(4) {
+	margin-top: 30px;
+	font-size: 1.375rem;
+	font-weight: 300;
+	color: #fff;
+	line-height: 22px;
+}
+
+main .error p:nth-child(4) a {
+	font-size: 1.375rem;
+	color: #fffd38;
+	border-bottom: 1px solid #fffd38;
+	font-weight: 500;
+	display: inline-block;
+	line-height: 25px;
+	text-decoration: none !important;
+}
+
+@media (max-width: 480px) {
+	main .error .middle-container {
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+}

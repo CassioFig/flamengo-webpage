@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/header.css">
+	<link rel="stylesheet" href="../css/styles.css">
+	<link rel="stylesheet" href="../css/footer.css">
+	<link rel="stylesheet" href="../css/main-404.css">
+	<link rel="stylesheet" href="../css/variables.css">
+	<script src="../js/index.js"></script>
+
+	<!-- Dependencies -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<title>Clubes de Regata do Flamengo</title>
+
+	<style>
+		* {
+			box-sizing: border-box;
+			padding: 0;
+			margin: 0;
+			font-family: "Rajdhani", sans-serif;
+		}
+
+		body {
+			display: grid;
+			grid-template-areas:
+				"header	header"
+				"main		main"
+				"footer	footer";
+			grid-template-columns: 1fr;
+			grid-template-rows: auto 1fr auto;
+			height: 100vh;
+		}
+
+		.middle-container {
+			max-width: 1140px;
+			margin-right: auto;
+			margin-left: auto;
+		}
+
+		@media (max-width: 768px) {
+			.middle-container {
+				max-width: 720px;
+			}
+		}
+
+		@media (max-width: 480px) {
+			.middle-container {
+				max-width: 100%;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<section class="top-header">
+			<div class="middle-container">
+				<div class="publicity">
+					<a href="#">Seja Sócio-Torcedor</a>
+					<a href="#">Aproveite o FLA Prêmios</a>
+				</div>
+				<div class="icons-area">
+					<img id="adidas-logo" src="../assets/icons/adidas.png" alt="adidas-logo">
+					<div class="icons-media">
+						<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+						<a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+						<a href="#"><i class="fa-brands fa-instagram"></i></a>
+						<a href="#"><i class="fa-brands fa-youtube"></i></a>
+						<a href="#"><i class="fa-brands fa-tiktok"></i></a>
+						<a href="#" class="hide-element-nr"><i class="fa fa-magnifying-glass"></i></a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="bottom-header">
+			<div class="middle-container">
+				<nav>
+					<div class="logo-area">
+						<button type="button" aria-label="Menu" class="menu-button" onclick="toggleMenu()">
+							<i class="fa-solid fa-bars"></i>
+						</button>
+						<div class="logo-menu">
+							<a href="index.html">
+								<img src="../assets/images/logo-menu-md.png" alt="Flamengo Logo">
+							</a>
+						</div>
+						<button type="button" aria-label="Search" class="search-button">
+							<i class="fa fa-magnifying-glass"></i>
+						</button>
+					</div>
+					<ul class="hide-element-nr">
+						<li class="dropdown" id="futebol">
+							<a href="#">Futebol <i class="fa fa-caret-down" style="font-size: 12px;"></i></a>
+							<ul class="dropdown-content">
+								<li><a href="#">Página Inicial</a></li>
+								<li><a href="./team.html">Elenco</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Ingressos</a></li>
+						<li><a href="#">Sócio-Torcedor</a></li>
+						<li><a href="#">Basquete</a></li>
+						<li><a href="#">Olímpicos</a></li>
+						<li><a href="#">Fla-Anjo</a></li>
+						<li><a href="#">Fla Prêmios</a></li>
+						<li><a href="#">Loja</a></li>
+						<li class="dropdown" id="clube">
+							<a href="#">Clube <i class="fa fa-caret-down" style="font-size: 12px;"></i></a>
+							<ul class="dropdown-content">
+								<li><a href="./contact.html">Contato</a></li>
+								<li><a href="./faq.html">FAQ</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</section>
+	</header>
+	<main>
+		<section class="page-title">
+			<h2>Erro 404</h2>
+		</section>
+		<section class="error">
+			<div class="middle-container">
+				<p>Erro 404</p>
+				<h2>Página não encontrada</h2>
+				<p>A página que você procura não existe ou não está mais disponível</p>
+				<p><a href="./index.html">Clique aqui para voltar a página inicial</a></p>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<section class="addresses">
+			<div class="middle-container">
+				<address>
+					<h4>Sede Gávea</h4>
+					<ul>
+						<li>Av. Borges de Medeiros, 997</li>
+						<li>Lagoa - Rio de Janeiro/RJ - Brasil</li>
+						<li>CEP: 22430-041 - Tel:(21) 2159-0100</li>
+					</ul>
+				</address>
+				<address>
+					<h4>CT George Helal</h4>
+					<ul>
+						<li>Estrada dos Bandeirantes, 25.997</li>
+						<li>Vargem Grande - Rio de Janeiro/RJ - Brasil</li>
+						<li>CEP: 22785-275</li>
+					</ul>
+				</address>
+			</div>
+		</section>
+		<section class="sponsors"></section>
+	</footer>
+</body>
+
+</html>
