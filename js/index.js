@@ -6,3 +6,8 @@ function toggleMenu() {
 		navUl.classList.add('hide-element-nr');
 	}
 }
+
+function toggleAccordion(headerElement) {
+	const accordion = headerElement.parentElement;
+	accordion.classList.toggle('active');
+}

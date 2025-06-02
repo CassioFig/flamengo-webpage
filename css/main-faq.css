@@ -1,0 +1,54 @@
+main .faq .middle-container {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+
+.faq-accordion {
+	margin-bottom: 1.5rem;
+}
+
+.faq-accordion .header {
+	margin-bottom: 1rem;
+	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.faq-accordion .header h3 {
+	border-left: 3px solid;
+	padding-left: 0.8125rem;
+	font-size: 1.625rem;
+	font-weight: 800;
+	text-transform: uppercase;
+	border-color: #dc3545;
+}
+
+.accordion-icon {
+	color: #dc3545;
+	font-size: 1.2rem;
+	transition: transform 0.3s ease;
+}
+
+.faq-accordion.active .accordion-icon {
+	transform: rotate(180deg);
+}
+
+.faq-accordion .content {
+	padding-left: 1rem;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.3s ease;
+}
+
+.faq-accordion.active .content {
+	max-height: 200px;
+}
+
+.faq-accordion .content p {
+	font-size: 1.125rem;
+	line-height: 1.3rem;
+	font-weight: 500;
+	margin-bottom: 1rem;
+	color: var( --text-gray);
+}
