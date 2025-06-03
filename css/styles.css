@@ -16,3 +16,26 @@ main section.page-title h2 {
 	font-weight: 700;
 	text-transform: uppercase;
 }
+
+#back-to-top {
+	position: fixed;
+	bottom: 32px;
+	right: 32px;
+	z-index: 1000;
+	background: var(--primary-red);
+	color: var(--primary-white);
+	border: none;
+	border-radius: 50%;
+	width: 48px;
+	height: 48px;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.5rem;
+	cursor: pointer;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+#back-to-top:hover {
+	background: var(--primary-red-dark);
+}
